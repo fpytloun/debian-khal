@@ -5,6 +5,7 @@ Section: utils
 Priority: optional
 Build-Depends: debhelper (>= 9),
                dh-python (>= 2.20160609~),
+               locales,
                python3-alabaster,
                python3-all,
                python3-click (>= 5.0),

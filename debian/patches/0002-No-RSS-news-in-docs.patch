@@ -1,0 +1,68 @@
+From 47893727a208ac458fb24b4b3d45eebabb3916fc Mon Sep 17 00:00:00 2001
+From: Filip Pytloun <filip@pytloun.cz>
+Date: Fri, 12 Aug 2016 20:08:34 +0200
+Subject: No RSS news in docs
+
+---
+ doc/source/conf.py   |  1 -
+ doc/source/index.rst |  1 -
+ doc/source/news.rst  | 29 -----------------------------
+ 3 files changed, 31 deletions(-)
+ delete mode 100644 doc/source/news.rst
+
+diff --git a/doc/source/conf.py b/doc/source/conf.py
+index 8401275..0312bd7 100644
+--- a/doc/source/conf.py
++++ b/doc/source/conf.py
+@@ -31,7 +31,6 @@ extensions = [
+     'sphinx.ext.autodoc',
+     'sphinx.ext.intersphinx',
+     'sphinx.ext.todo',
+-    'sphinxcontrib.newsfeed',
+ ]
+ 
+ # Add any paths that contain templates here, relative to this directory.
+diff --git a/doc/source/index.rst b/doc/source/index.rst
+index 2fd8724..e4418c1 100644
+--- a/doc/source/index.rst
++++ b/doc/source/index.rst
+@@ -45,4 +45,3 @@ Table of Contents
+    changelog
+    faq
+    license
+-   news
+diff --git a/doc/source/news.rst b/doc/source/news.rst
+deleted file mode 100644
+index 8082086..0000000
+--- a/doc/source/news.rst
++++ /dev/null
+@@ -1,29 +0,0 @@
+-News
+-====
+-
+-Below is a list of new releases and other khal related news. This is also
+-available as an `rss feed <https://lostpackets.de/khal/index.rss>`_ |rss|.
+-
+- .. |rss| image:: images/rss.png
+-        :target: https://lostpackets.de/khal/index.rss
+-
+-.. feed::
+-    :rss: index.rss
+-    :title: khal news
+-    :link: http://lostpackets.de/khal/
+-
+-    news/khal082
+-    news/khal081
+-    news/khal08
+-    news/khal07
+-    news/khal06
+-    news/khal05
+-    news/khal04
+-    news/31c3
+-    news/khal031
+-    news/khal03
+-    news/khal02
+-    news/khal011
+-    news/khal01
+-    news/30c3
+-    news/callfortesting

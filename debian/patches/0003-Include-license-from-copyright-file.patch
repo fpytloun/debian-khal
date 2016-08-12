@@ -1,0 +1,38 @@
+From e615c68a1276101d86da577d864c6e9df1d98e54 Mon Sep 17 00:00:00 2001
+From: Filip Pytloun <filip@pytloun.cz>
+Date: Fri, 12 Aug 2016 20:09:20 +0200
+Subject: Include license from copyright file
+
+---
+ doc/source/license.rst | 21 ++-------------------
+ 1 file changed, 2 insertions(+), 19 deletions(-)
+
+diff --git a/doc/source/license.rst b/doc/source/license.rst
+index 1d3bcf3..4af997d 100644
+--- a/doc/source/license.rst
++++ b/doc/source/license.rst
+@@ -1,22 +1,5 @@
+ License
+ -------
+-khal is released under the Expat/MIT License::
++khal is released under the Expat/MIT License:
+ 
+-    Copyright (c) 2013-2015 Christian Geier et al.
+-
+-    Permission is hereby granted, free of charge, to any person obtaining a copy of
+-    this software and associated documentation files (the "Software"), to deal in
+-    the Software without restriction, including without limitation the rights to
+-    use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+-    the Software, and to permit persons to whom the Software is furnished to do so,
+-    subject to the following conditions:
+-
+-    The above copyright notice and this permission notice shall be included in all
+-    copies or substantial portions of the Software.
+-
+-    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+-    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+-    FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+-    COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+-    IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+-    CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
++.. literalinclude:: /usr/share/doc/khal-doc/copyright

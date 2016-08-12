@@ -1,0 +1,30 @@
+From 20b1d965bf374fd8cd8005bc96cc00fb855179a8 Mon Sep 17 00:00:00 2001
+From: Filip Pytloun <filip@pytloun.cz>
+Date: Fri, 12 Aug 2016 21:18:33 +0200
+Subject: Avoid privacy breach in sphinx doc
+
+---
+ doc/source/conf.py | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+
+diff --git a/doc/source/conf.py b/doc/source/conf.py
+index ca54f31..08f78e1 100644
+--- a/doc/source/conf.py
++++ b/doc/source/conf.py
+@@ -108,11 +108,11 @@ html_theme = 'alabaster'
+ # Theme options are theme-specific and customize the look and feel of a theme
+ # further.  For a list of options available for each theme, see the
+ # documentation.
+-html_theme_options = {
+-    'github_user': 'pimutils',
+-    'github_repo': 'khal',
+-    'travis_button': 'true',
+-}
++#html_theme_options = {
++#    'github_user': 'pimutils',
++#    'github_repo': 'khal',
++#    'travis_button': 'true',
++#}
+ 
+ # Add any paths that contain custom themes here, relative to this directory.
+ #html_theme_path = []

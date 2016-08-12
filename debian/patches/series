@@ -3,3 +3,4 @@
 0003-Reference-license-from-copyright-file.patch
 0004-Fix-intersphinx-mapping.patch
 0005-Fix-tests-failing-due-to-timezone.patch
+0006-Avoid-privacy-breach-in-sphinx-doc.patch

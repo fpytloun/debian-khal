@@ -1,0 +1,23 @@
+sudo: false
+language: python
+
+python:
+    - 3.3
+    - 3.4
+    - 3.5
+
+env:
+    - BUILD=tests
+    - BUILD=tests-negtz
+    - BUILD=style
+
+addons:
+    apt:
+        packages:
+            - language-pack-de
+
+install:
+        - "pip install tox"
+
+script:
+    - "tox -e py-$BUILD"

@@ -11,6 +11,7 @@ Build-Depends: debhelper (>= 9),
                python3-click (>= 5.0),
                python3-configobj,
                python3-dateutil,
+               python3-doc,
                python3-freezegun,
                python3-icalendar,
                python3-pytest,
@@ -42,7 +43,7 @@ Description: Standards based CLI and terminal calendar program
 Package: khal-doc
 Section: doc
 Architecture: all
-Depends: ${misc:Depends}, ${sphinxdoc:Depends}
+Depends: python3-doc, ${misc:Depends}, ${sphinxdoc:Depends}
 Description: Standards based CLI and terminal calendar program
   Features
   --------

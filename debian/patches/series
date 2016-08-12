@@ -2,3 +2,4 @@
 0002-No-RSS-news-in-docs.patch
 0003-Reference-license-from-copyright-file.patch
 0004-Fix-intersphinx-mapping.patch
+0005-Fix-tests-failing-due-to-timezone.patch

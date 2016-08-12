@@ -16,6 +16,8 @@ override_dh_sphinxdoc:
 ifeq (,$(findstring nodocs, $(DEB_BUILD_OPTIONS)))
 	PYTHONPATH=. sphinx-build -b html doc/source $(CURDIR)/debian/khal-doc/usr/share/doc/khal-doc/html
 	dh_sphinxdoc -O--buildsystem=python_distutils
+	# Remove unwanted license file, we already reference d/copyright
+	rm -f $(CURDIR)/debian/khal-doc/usr/share/doc/khal-doc/html/_sources/license.txt
 endif
 
 override_dh_auto_test:

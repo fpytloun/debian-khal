@@ -32,25 +32,25 @@ Package: khal
 Architecture: all
 Depends: ${misc:Depends}, ${python3:Depends}
 Description: Standards based CLI and terminal calendar program
-  Features
-  --------
-   - khal can read and write events/icalendars to vdir, so vdirsyncer can be
-     used to synchronize calendars with a variety of other programs, for
-     example CalDAV servers.
-   - fast and easy way to add new events
-   - ikhal (interactive khal) lets you browse and edit calendars and events
+ Features
+ --------
+  - khal can read and write events/icalendars to vdir, so vdirsyncer can be
+    used to synchronize calendars with a variety of other programs, for
+    example CalDAV servers.
+  - fast and easy way to add new events
+  - ikhal (interactive khal) lets you browse and edit calendars and events
 
 Package: khal-doc
 Section: doc
 Architecture: all
 Depends: python3-doc, ${misc:Depends}, ${sphinxdoc:Depends}
-Description: Standards based CLI and terminal calendar program
-  Features
-  --------
-   - khal can read and write events/icalendars to vdir, so vdirsyncer can be
-     used to synchronize calendars with a variety of other programs, for
-     example CalDAV servers.
-   - fast and easy way to add new events
-   - ikhal (interactive khal) lets you browse and edit calendars and events
+Description: Standards based CLI and terminal calendar program - documentation
+ Features
+ --------
+  - khal can read and write events/icalendars to vdir, so vdirsyncer can be
+    used to synchronize calendars with a variety of other programs, for
+    example CalDAV servers.
+  - fast and easy way to add new events
+  - ikhal (interactive khal) lets you browse and edit calendars and events
  .
  This package contains the documentation for khal.

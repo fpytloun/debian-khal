@@ -4,8 +4,6 @@ khal
 *Khal* is a standards based CLI (console) calendar program, able to synchronize
 with CalDAV_ servers through vdirsyncer_.
 
-.. image:: http://lostpackets.de/images/khal.png
-
 Features
 --------
 (or rather: limitations)

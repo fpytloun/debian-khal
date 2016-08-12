@@ -1,11 +1,12 @@
-From b39e221331d0556abf414014d72f1ed5b3dc84a7 Mon Sep 17 00:00:00 2001
+From 68ae6a9d278f76bfd614c9272694908cc3758674 Mon Sep 17 00:00:00 2001
 From: Filip Pytloun <filip@pytloun.cz>
 Date: Fri, 12 Aug 2016 21:18:33 +0200
 Subject: Avoid privacy breach in sphinx doc
 
 ---
- doc/source/conf.py | 10 +++++-----
- 1 file changed, 5 insertions(+), 5 deletions(-)
+ doc/source/conf.py   | 10 +++++-----
+ doc/source/index.rst |  2 --
+ 2 files changed, 5 insertions(+), 7 deletions(-)
 
 diff --git a/doc/source/conf.py b/doc/source/conf.py
 index ca54f31..08f78e1 100644
@@ -28,3 +29,16 @@ index ca54f31..08f78e1 100644
  
  # Add any paths that contain custom themes here, relative to this directory.
  #html_theme_path = []
+diff --git a/doc/source/index.rst b/doc/source/index.rst
+index e4418c1..38d0bd7 100644
+--- a/doc/source/index.rst
++++ b/doc/source/index.rst
+@@ -4,8 +4,6 @@ khal
+ *Khal* is a standards based CLI (console) calendar program, able to synchronize
+ with CalDAV_ servers through vdirsyncer_.
+ 
+-.. image:: http://lostpackets.de/images/khal.png
+-
+ Features
+ --------
+ (or rather: limitations)

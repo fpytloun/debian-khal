@@ -31,6 +31,7 @@ Vcs-Git: https://anonscm.debian.org/git/python-modules/packages/khal.git
 Package: khal
 Architecture: all
 Depends: ${misc:Depends}, ${python3:Depends}
+Recommends: python3-setproctitle
 Description: Standards based CLI and terminal calendar program
  Features
  --------

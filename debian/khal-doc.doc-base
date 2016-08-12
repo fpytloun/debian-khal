@@ -1,0 +1,9 @@
+Document: khal-doc
+Title: Khal Documentation
+Author: Christian Geier <khal@lostpackets.de>
+Abstract: Sphinx documentation for Khal
+Section: Programming/Python
+
+Format: HTML
+Index: /usr/share/doc/khal-doc/html/index.html
+Files: /usr/share/doc/khal-doc/html/*

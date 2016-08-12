@@ -1,0 +1,54 @@
+Source: khal
+Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Uploaders: Filip Pytloun <filip@pytloun.cz>
+Section: utils
+Priority: optional
+Build-Depends: debhelper (>= 9),
+               dh-python (>= 2.20160609~),
+               python3-all,
+               python3-click (>= 5.0),
+               python3-pytest,
+               python3-setuptools,
+               python3-freezegun,
+               python3-icalendar,
+               python3-urwid,
+               python3-pyxdg,
+               python3-pytz,
+               vdirsyncer,
+               python3-dateutil,
+               python3-configobj,
+               python3-tzlocal,
+               python3-sphinx,
+               python3-alabaster
+Standards-Version: 3.9.8
+Testsuite: autopkgtest-pkg-python
+Homepage: https://github.com/pimutils/khal
+Vcs-Browser: https://anonscm.debian.org/cgit/python-modules/packages/khal.git/
+Vcs-Git: https://anonscm.debian.org/git/python-modules/packages/khal.git
+
+Package: khal
+Architecture: all
+Depends: ${misc:Depends}, ${python3:Depends}
+Description: Standards based CLI and terminal calendar program
+  Features
+  --------
+   - khal can read and write events/icalendars to vdir, so vdirsyncer can be
+     used to synchronize calendars with a variety of other programs, for
+     example CalDAV servers.
+   - fast and easy way to add new events
+   - ikhal (interactive khal) lets you browse and edit calendars and events
+
+Package: khal-doc
+Section: doc
+Architecture: all
+Depends: ${misc:Depends}, ${sphinxdoc:Depends}
+Description: Standards based CLI and terminal calendar program
+  Features
+  --------
+   - khal can read and write events/icalendars to vdir, so vdirsyncer can be
+     used to synchronize calendars with a variety of other programs, for
+     example CalDAV servers.
+   - fast and easy way to add new events
+   - ikhal (interactive khal) lets you browse and edit calendars and events
+ .
+ This package contains the documentation for khal.

@@ -1,0 +1,5 @@
+khal (0.8.2-1) unstable; urgency=medium
+
+  * initial release (Closes: #745025)
+
+ -- Filip Pytloun <filip@pytloun.cz>  Fri, 12 Aug 2016 19:44:09 +0200

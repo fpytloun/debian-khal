@@ -2,4 +2,4 @@ License
 -------
 khal is released under the Expat/MIT License:
 
-.. literalinclude:: /usr/share/doc/khal-doc/copyright
+For full test of this license see ``/usr/share/doc/khal-doc/copyright``

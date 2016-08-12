@@ -1,14 +1,14 @@
-From e615c68a1276101d86da577d864c6e9df1d98e54 Mon Sep 17 00:00:00 2001
+From f5ee867b42f066c5b4362fd1b5b65d7261c58d96 Mon Sep 17 00:00:00 2001
 From: Filip Pytloun <filip@pytloun.cz>
 Date: Fri, 12 Aug 2016 20:09:20 +0200
-Subject: Include license from copyright file
+Subject: Reference license from copyright file
 
 ---
  doc/source/license.rst | 21 ++-------------------
  1 file changed, 2 insertions(+), 19 deletions(-)
 
 diff --git a/doc/source/license.rst b/doc/source/license.rst
-index 1d3bcf3..4af997d 100644
+index 1d3bcf3..90b3e5c 100644
 --- a/doc/source/license.rst
 +++ b/doc/source/license.rst
 @@ -1,22 +1,5 @@
@@ -35,4 +35,4 @@ index 1d3bcf3..4af997d 100644
 -    COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
 -    IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 -    CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-+.. literalinclude:: /usr/share/doc/khal-doc/copyright
++For full test of this license see ``/usr/share/doc/khal-doc/copyright``

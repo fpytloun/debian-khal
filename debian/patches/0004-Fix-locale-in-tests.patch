@@ -1,0 +1,73 @@
+From cee741dc8b0a9d062d256fea5340066e6090399c Mon Sep 17 00:00:00 2001
+From: Filip Pytloun <filip@pytloun.cz>
+Date: Fri, 12 Aug 2016 20:17:56 +0200
+Subject: Fix locale in tests
+
+---
+ tests/cal_display_test.py | 20 ++++++++++----------
+ 1 file changed, 10 insertions(+), 10 deletions(-)
+
+diff --git a/tests/cal_display_test.py b/tests/cal_display_test.py
+index e871c2f..d11c016 100644
+--- a/tests/cal_display_test.py
++++ b/tests/cal_display_test.py
+@@ -139,7 +139,7 @@ example_de = [
+ 
+ 
+ def test_vertical_month():
+-    locale.setlocale(locale.LC_ALL, 'en_US.utf-8')
++    locale.setlocale(locale.LC_ALL, 'C.UTF-8')
+     vert_str = vertical_month(month=12, year=2011,
+                               today=datetime.date(2011, 12, 12))
+     assert vert_str == example1
+@@ -158,13 +158,13 @@ def test_vertical_month():
+ 
+ def test_vertical_month_unicode():
+     try:
+-        locale.setlocale(locale.LC_ALL, 'de_DE.utf-8')
++        locale.setlocale(locale.LC_ALL, 'C.UTF-8')
+     except locale.Error as error:
+         if str(error) == 'unsupported locale setting':
+             pytest.xfail(
+-                'To get this test to run, you need to add `de_DE.utf-8` to '
++                'To get this test to run, you need to add `C.UTF-8` to '
+                 'your locales. On Debian GNU/Linux 8 you do this by '
+-                'uncommenting `de_DE.utf-8 in /etc/locale.gen and then run '
++                'uncommenting `C.UTF-8 in /etc/locale.gen and then run '
+                 '`locale-gen` (as root).'
+             )
+         else:
+@@ -178,13 +178,13 @@ def test_vertical_month_unicode():
+ 
+ def test_vertical_month_unicode_weekdeays():
+     try:
+-        locale.setlocale(locale.LC_ALL, 'cs_CZ.UTF-8')
++        locale.setlocale(locale.LC_ALL, 'C.UTF-8')
+     except locale.Error as error:
+         if str(error) == 'unsupported locale setting':
+             pytest.xfail(
+-                'To get this test to run, you need to add `cs_CZ.UTF-8` to '
++                'To get this test to run, you need to add `C.UTF-8` to '
+                 'your locales. On Debian GNU/Linux 8 you do this by '
+-                'uncommenting `cs_CZ.UTF-8` in /etc/locale.gen and then run '
++                'uncommenting `C.UTF-8` in /etc/locale.gen and then run '
+                 '`locale-gen` (as root).'
+             )
+         else:
+@@ -198,13 +198,13 @@ def test_vertical_month_unicode_weekdeays():
+ 
+ def test_vertical_month_unicode_weekdeays_gr():
+     try:
+-        locale.setlocale(locale.LC_ALL, 'el_GR.UTF-8')
++        locale.setlocale(locale.LC_ALL, 'C.UTF-8')
+     except locale.Error as error:
+         if str(error) == 'unsupported locale setting':
+             pytest.xfail(
+-                'To get this test to run, you need to add `el_GR.UTF-8` to '
++                'To get this test to run, you need to add `C.UTF-8` to '
+                 'your locales. On Debian GNU/Linux 8 you do this by '
+-                'uncommenting `el_GR.UTF-8` in /etc/locale.gen and then run '
++                'uncommenting `C.UTF-8` in /etc/locale.gen and then run '
+                 '`locale-gen` (as root).'
+             )
+         else:

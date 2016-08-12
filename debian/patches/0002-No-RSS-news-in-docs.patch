@@ -1,14 +1,44 @@
-From 47893727a208ac458fb24b4b3d45eebabb3916fc Mon Sep 17 00:00:00 2001
+From 342213f395ebd7e5e2acd0c6b9d58069eb431ab9 Mon Sep 17 00:00:00 2001
 From: Filip Pytloun <filip@pytloun.cz>
 Date: Fri, 12 Aug 2016 20:08:34 +0200
 Subject: No RSS news in docs
 
 ---
- doc/source/conf.py   |  1 -
- doc/source/index.rst |  1 -
- doc/source/news.rst  | 29 -----------------------------
- 3 files changed, 31 deletions(-)
+ doc/source/conf.py                 |  1 -
+ doc/source/index.rst               |  1 -
+ doc/source/news.rst                | 29 -----------------------------
+ doc/source/news/30c3.rst           | 12 ------------
+ doc/source/news/31c3.rst           | 12 ------------
+ doc/source/news/callfortesting.rst | 15 ---------------
+ doc/source/news/khal01.rst         | 18 ------------------
+ doc/source/news/khal011.rst        | 11 -----------
+ doc/source/news/khal02.rst         | 32 --------------------------------
+ doc/source/news/khal03.rst         | 36 ------------------------------------
+ doc/source/news/khal031.rst        | 20 --------------------
+ doc/source/news/khal04.rst         | 26 --------------------------
+ doc/source/news/khal05.rst         | 23 -----------------------
+ doc/source/news/khal06.rst         | 23 -----------------------
+ doc/source/news/khal07.rst         | 23 -----------------------
+ doc/source/news/khal08.rst         | 28 ----------------------------
+ doc/source/news/khal081.rst        | 13 -------------
+ doc/source/news/khal082.rst        | 16 ----------------
+ 18 files changed, 339 deletions(-)
  delete mode 100644 doc/source/news.rst
+ delete mode 100644 doc/source/news/30c3.rst
+ delete mode 100644 doc/source/news/31c3.rst
+ delete mode 100644 doc/source/news/callfortesting.rst
+ delete mode 100644 doc/source/news/khal01.rst
+ delete mode 100644 doc/source/news/khal011.rst
+ delete mode 100644 doc/source/news/khal02.rst
+ delete mode 100644 doc/source/news/khal03.rst
+ delete mode 100644 doc/source/news/khal031.rst
+ delete mode 100644 doc/source/news/khal04.rst
+ delete mode 100644 doc/source/news/khal05.rst
+ delete mode 100644 doc/source/news/khal06.rst
+ delete mode 100644 doc/source/news/khal07.rst
+ delete mode 100644 doc/source/news/khal08.rst
+ delete mode 100644 doc/source/news/khal081.rst
+ delete mode 100644 doc/source/news/khal082.rst
 
 diff --git a/doc/source/conf.py b/doc/source/conf.py
 index 8401275..0312bd7 100644
@@ -66,3 +96,401 @@ index 8082086..0000000
 -    news/khal01
 -    news/30c3
 -    news/callfortesting
+diff --git a/doc/source/news/30c3.rst b/doc/source/news/30c3.rst
+deleted file mode 100644
+index 06badc7..0000000
+--- a/doc/source/news/30c3.rst
++++ /dev/null
+@@ -1,12 +0,0 @@
+-pycarddav and khal at 30c3
+-==========================
+-
+-.. feed-entry::
+-        :date: 2013-12-13
+-
+-If you will be 30C3_ and would like to discuss the faults and merits of khal or
+-pycarddav, commandline calendaring/addressbooking in general, your ideas or just
+-have a beer or mate, I'd love to meet up. You can find my contact details under
+-*Feedback*.
+-
+-.. _30C3: https://events.ccc.de/congress/2013/wiki/Main_Page
+diff --git a/doc/source/news/31c3.rst b/doc/source/news/31c3.rst
+deleted file mode 100644
+index 56cb513..0000000
+--- a/doc/source/news/31c3.rst
++++ /dev/null
+@@ -1,12 +0,0 @@
+-pycarddav and khal at 31c3
+-==========================
+-
+-.. feed-entry::
+-        :date: 2014-12-09
+-
+-If you will be at 31C3_ and would like to discuss the faults and merits of khal
+-or pycarddav, commandline calendaring/addressbooking in general, your ideas or
+-just have a beer or mate, I'd love to meet up. You can find my contact details
+-under *Feedback*.
+-
+-.. _31C3: https://events.ccc.de/congress/2014/wiki/Main_Page
+diff --git a/doc/source/news/callfortesting.rst b/doc/source/news/callfortesting.rst
+deleted file mode 100644
+index 95aa746..0000000
+--- a/doc/source/news/callfortesting.rst
++++ /dev/null
+@@ -1,15 +0,0 @@
+-Call for Testing
+-=================
+-
+-.. feed-entry::
+-        :date: 2013-11-19
+-
+-While there isn't a release yet, *khal* is, at least partly, in a usable shape
+-by now. Please report any errors you stumble upon and improvement suggestions
+-you have either via email or github_ (if you don't have any privacy concerns
+-etc. I'd prefer you use github since it is public, but I'll soon set up a
+-mailing list).  TODO.rst_ gives you an idea about the plans I currently have
+-for *khal*'s near future.
+-
+-.. _github: https://github.com/geier/khal/
+-.. _TODO.rst: https://github.com/geier/khal/blob/master/TODO.rst
+diff --git a/doc/source/news/khal01.rst b/doc/source/news/khal01.rst
+deleted file mode 100644
+index aa4ad55..0000000
+--- a/doc/source/news/khal01.rst
++++ /dev/null
+@@ -1,18 +0,0 @@
+-khal v0.1 released
+-==================
+-
+-.. feed-entry::
+-        :date: 2014-04-03
+-
+-The first release of khal is here: `khal v0.1.0`__ (and also available on pypi_
+-now).
+-
+-__ https://lostpackets.de/khal/downloads/khal-0.1.0.tar.gz
+-
+-The next release, hopefully coming rather sooner than later, will get rid of its
+-own CalDAV implementation, but instead use vdirsyncer_; you can
+-already try it out via checking out the branch *vdir* at github_.
+-
+-.. _pypi: https://pypi.python.org/pypi/khal/
+-.. _vdirsyncer: https://github.com/untitaker/vdirsyncer/
+-.. _github: https://github.com/geier/khal/tree/vdir
+diff --git a/doc/source/news/khal011.rst b/doc/source/news/khal011.rst
+deleted file mode 100644
+index 3ce3422..0000000
+--- a/doc/source/news/khal011.rst
++++ /dev/null
+@@ -1,11 +0,0 @@
+-khal v0.1.1 released
+-====================
+-
+-.. feed-entry::
+-        :date: 2014-05-07
+-
+-A small bugfix release: `khal v0.1.0`__
+-Example config file now in source dist.
+-
+-__ https://lostpackets.de/khal/downloads/khal-0.1.1.tar.gz
+-
+diff --git a/doc/source/news/khal02.rst b/doc/source/news/khal02.rst
+deleted file mode 100644
+index ed96b52..0000000
+--- a/doc/source/news/khal02.rst
++++ /dev/null
+@@ -1,32 +0,0 @@
+-khal v0.2 released
+-==================
+-
+-.. feed-entry::
+-        :date: 2014-06-27
+-
+-A new release of khal is here: `khal v0.2.0`__ (also available on pypi_).
+-
+-__ https://lostpackets.de/khal/downloads/khal-0.2.0.tar.gz
+-
+-
+-If you want to update your installation from pypi_, you can run `sudo pip
+-install --upgrade khal`.
+-
+-From now on *khal* relies on vdirsyncer_ for CalDAV sync. While this makes
+-*khal* a bit more complicated to setup, *vdirsyncer* is much better tested than
+-*khal* and also the `bus factor`__ increased (at least for parts of the
+-project).
+-
+-__ http://en.wikipedia.org/wiki/Bus_factor
+-
+-You might want to head over to the tutorial_ on how to setup *vdirsyncer*.
+-Afterwards you will need to re-setup your *khal* configuration (copy the new
+-example config file), also you will need to delete your old (local) database, so
+-please make sure you did sync everything.
+-
+-Also *khal*'s command line syntax changed qutie a bit, so you might want to head over the documentation_.
+-
+-.. _pypi: https://pypi.python.org/pypi/khal/
+-.. _vdirsyncer: https://github.com/untitaker/vdirsyncer/
+-.. _tutorial: https://vdirsyncer.readthedocs.org/en/latest/tutorial.html
+-.. _documentation: http://lostpackets.de/khal/pages/usage.html
+diff --git a/doc/source/news/khal03.rst b/doc/source/news/khal03.rst
+deleted file mode 100644
+index 38ec8ca..0000000
+--- a/doc/source/news/khal03.rst
++++ /dev/null
+@@ -1,36 +0,0 @@
+-khal v0.3 released
+-==================
+-
+-.. feed-entry::
+-        :date: 2014-09-03
+-
+-A new release of khal is here: `khal v0.3.0`__ (also available on pypi_).
+-
+-__ https://lostpackets.de/khal/downloads/khal-0.3.0.tar.gz
+-
+-
+-If you want to update your installation from pypi_, you can run `sudo pip
+-install --upgrade khal`.
+-
+-CHANGELOG
+----------
+-* new unified documentation
+-    * html documentation (website) and man pages are all generated from the same
+-      sources via sphinx (type `make html` or `make man` in doc/, the result
+-      will be build in *build/html* or *build/man* respectively (also available
+-      on `Read the Docs`__)
+-    * the new documentation lives in doc/
+-    * the package sphinxcontrib-newsfeed is needed for generating the html
+-      version (for generating an RSS feed)
+-    * the man pages live doc/build/man/, they can be build by running
+-      `make man` in doc/sphinx/
+-* new dependencies: configobj, tzlocal>=1.0
+-* **IMPORTANT**: the configuration file's syntax changed (again), have a look at the new
+-  documentation for details
+-* local_timezone and default_timezone will now be set to the timezone the
+-  computer is set to (if they are not set in the configuration file)
+-
+-__ https://khal.readthedocs.org
+-
+-.. _pypi: https://pypi.python.org/pypi/khal/
+-.. _vdirsyncer: https://github.com/untitaker/vdirsyncer/
+diff --git a/doc/source/news/khal031.rst b/doc/source/news/khal031.rst
+deleted file mode 100644
+index f2c27ea..0000000
+--- a/doc/source/news/khal031.rst
++++ /dev/null
+@@ -1,20 +0,0 @@
+-khal v0.3.1 released
+-====================
+-
+-.. feed-entry::
+-        :date: 2014-09-08
+-
+-A new release of khal is here: `khal v0.3.1`__ (also available on pypi_).
+-
+-__ https://lostpackets.de/khal/downloads/khal-0.3.1.tar.gz
+-
+-
+-This is a bugfix release, bringing no new features. The last release suffered
+-from a major bug, where events deleted on the server (and in the vdir) were not
+-deleted in khal's caching database and therefore still displayed in khal.
+-Therefore, after updating please delete your local database.
+-
+-For more information on other fixed bugs, see :ref:`changelog`.
+-
+-
+-.. _pypi: https://pypi.python.org/pypi/khal/
+diff --git a/doc/source/news/khal04.rst b/doc/source/news/khal04.rst
+deleted file mode 100644
+index c12f838..0000000
+--- a/doc/source/news/khal04.rst
++++ /dev/null
+@@ -1,26 +0,0 @@
+-khal v0.4.0 released
+-====================
+-
+-.. feed-entry::
+-        :date: 2015-02-02
+-
+-A new release of khal is here: `khal v0.4.0`__ (also available on pypi_).
+-
+-__ https://lostpackets.de/khal/downloads/khal-0.4.0.tar.gz
+-
+-This release offers several functional improvements like better support for
+-recurring events or a major speedup when creating the caching database and some
+-new features like week number support or creating recurring events with `khal
+-new --repeat`.
+-
+-Note to users
+--------------
+-
+-khal now requires click_ instead of docopt_ and, as usual, the local database
+-will need to be deleted.
+-
+-For a more detailed list of changes, please have a look at the :ref:`changelog`.
+-
+-.. _click: http://click.pocoo.org/
+-.. _docopt: http://docopt.org/
+-.. _pypi: https://pypi.python.org/pypi/khal/
+diff --git a/doc/source/news/khal05.rst b/doc/source/news/khal05.rst
+deleted file mode 100644
+index 745ba10..0000000
+--- a/doc/source/news/khal05.rst
++++ /dev/null
+@@ -1,23 +0,0 @@
+-khal v0.5.0 released
+-====================
+-
+-.. feed-entry::
+-        :date: 2015-06-01
+-
+-A new release of khal is here: `khal v0.5.0`__ (also available on pypi_).
+-
+-__ https://lostpackets.de/khal/downloads/khal-0.5.0.tar.gz
+-
+-This release brings a lot of new features (like rudimentary search support,
+-user changeable keybindings in ikhal, new command `at`), python 3 support and
+-some assorted bugfixes.
+-
+-Thanks to everybody who contributed with bug reports, suggestions and code,
+-especially to everyone contributing for the first time!
+-
+-For a more detailed list of changes, please have a look at the changelog_.
+-
+-.. _click: http://click.pocoo.org/
+-.. _docopt: http://docopt.org/
+-.. _pypi: https://pypi.python.org/pypi/khal/
+-.. _changelog: changelog.html#id2
+diff --git a/doc/source/news/khal06.rst b/doc/source/news/khal06.rst
+deleted file mode 100644
+index acb651b..0000000
+--- a/doc/source/news/khal06.rst
++++ /dev/null
+@@ -1,23 +0,0 @@
+-khal v0.6.0 released
+-====================
+-
+-.. feed-entry::
+-        :date: 2015-07-15
+-
+-
+-Only six weeks after the last version `khal v0.6.0`__ is now available  (yes,
+-also on pypi_).
+-
+-__ https://lostpackets.de/khal/downloads/khal-0.6.0.tar.gz
+-
+-This release fixes an unfortunate bug which could lead to wrong shifts in other
+-events when inserting complicated recurring events. All users are therefore
+-advised to quickly upgrade to khal 0.6.
+-
+-There are also quite a bunch of new features, among other nicer editing
+-capabilities in ikhal's text edits and import of .ics files. For a more
+-detailed list of changes, please have a look at the changelog_ (especially if
+-you package khal).
+-
+-.. _pypi: https://pypi.python.org/pypi/khal/
+-.. _changelog: changelog.html#id2
+diff --git a/doc/source/news/khal07.rst b/doc/source/news/khal07.rst
+deleted file mode 100644
+index 9748630..0000000
+--- a/doc/source/news/khal07.rst
++++ /dev/null
+@@ -1,23 +0,0 @@
+-khal v0.7.0 released
+-====================
+-
+-.. feed-entry::
+-        :date: 2015-11-24
+-
+-The latest version of khal has been released: `khal v0.7.0`__
+-(as always, also on pypi_).
+-
+-__ https://lostpackets.de/khal/downloads/khal-0.7.0.tar.gz
+-
+-This release brings a lot of new features, by an ever increasing number of new
+-contributors (welcome everyone!). With highlighting of days that have events we
+-now have one of the most requested features implemented (because it does
+-noticeably slow down khal's start it is disabled by default, startup performance
+-will hopefully be increased soon). Among the other new features are duplicating
+-events (in ikhal), prettier event display (also in ikhal) and a better zsh
+-completion file.
+-
+-Have a look at the changelog_ for more complete list of new features.
+-
+-.. _pypi: https://pypi.python.org/pypi/khal/
+-.. _changelog: changelog.html#id2
+diff --git a/doc/source/news/khal08.rst b/doc/source/news/khal08.rst
+deleted file mode 100644
+index a9bee61..0000000
+--- a/doc/source/news/khal08.rst
++++ /dev/null
+@@ -1,28 +0,0 @@
+-khal v0.8.0 released
+-====================
+-
+-.. feed-entry::
+-        :date: 2016-04-13
+-
+-The latest version of khal has been released: `khal v0.8.0`__
+-(as always, also on pypi_).
+-
+-__ https://lostpackets.de/khal/downloads/khal-0.8.0.tar.gz
+-
+-We have recently dropped python 2 support, so this release is the first one that
+-only supports python 3 (3.3+).
+-
+-There is one more backwards incompatible change:
+-The color `grey` has been renamed to `gray`, if you use it in your configuration
+-file, you will need to update to `gray`.
+-
+-There are some new features that should be configuring khal easier, especially
+-for new users (e.g., new command `configure` helps with the initial
+-configuration). Also alarms can now be entered either when creating new events
+-with `new` or when editing them in ikhal.
+-
+-Have a look at the changelog_ for more complete list of new features (of which
+-there are many).
+-
+-.. _pypi: https://pypi.python.org/pypi/khal/
+-.. _changelog: changelog.html#id2
+diff --git a/doc/source/news/khal081.rst b/doc/source/news/khal081.rst
+deleted file mode 100644
+index bb85e79..0000000
+--- a/doc/source/news/khal081.rst
++++ /dev/null
+@@ -1,13 +0,0 @@
+-khal v0.8.1 released
+-====================
+-
+-.. feed-entry::
+-        :date: 2016-04-13
+-
+-The second version released today (`khal v0.8.1`__, yes, also on pypi_) fixes a
+-bug in the CalendarWidget() that probably would not have trigged but made the
+-tests fail.
+-
+-__ https://lostpackets.de/khal/downloads/khal-0.8.1.tar.gz
+-
+-.. _pypi: https://pypi.python.org/pypi/khal/
+diff --git a/doc/source/news/khal082.rst b/doc/source/news/khal082.rst
+deleted file mode 100644
+index 497328c..0000000
+--- a/doc/source/news/khal082.rst
++++ /dev/null
+@@ -1,16 +0,0 @@
+-khal v0.8.2 released
+-====================
+-
+-.. feed-entry::
+-        :date: 2016-05-16
+-
+-`khal v0.8.2`__ (pypi_) is a maintenance release that fixes several bugs in
+-`configure` that would lead to crashes during the initial configuration and
+-following runs of khal (due to an invalid configuration file getting written to
+-disk) and improves the detection of the installed icalendar version.
+-
+-If khal currently works for you, there is no need for an upgrade.
+-
+-__ https://lostpackets.de/khal/downloads/khal-0.8.2.tar.gz
+-
+-.. _pypi: https://pypi.python.org/pypi/khal/

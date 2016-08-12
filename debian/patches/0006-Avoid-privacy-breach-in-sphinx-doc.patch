@@ -1,4 +1,4 @@
-From 68ae6a9d278f76bfd614c9272694908cc3758674 Mon Sep 17 00:00:00 2001
+From 6c81e4c871837c47eeedcf991b4dcf205aa02a1a Mon Sep 17 00:00:00 2001
 From: Filip Pytloun <filip@pytloun.cz>
 Date: Fri, 12 Aug 2016 21:18:33 +0200
 Subject: Avoid privacy breach in sphinx doc

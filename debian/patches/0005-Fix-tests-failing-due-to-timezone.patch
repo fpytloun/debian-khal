@@ -1,4 +1,4 @@
-From 6275a1605336548b8f073c7be605ba7234f997de Mon Sep 17 00:00:00 2001
+From 24186483438bc9703553bb7d6c31ac0cd7567b50 Mon Sep 17 00:00:00 2001
 From: Filip Pytloun <filip@pytloun.cz>
 Date: Fri, 12 Aug 2016 21:06:36 +0200
 Subject: Fix tests failing due to timezone

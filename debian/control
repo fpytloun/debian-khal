@@ -5,21 +5,21 @@ Section: utils
 Priority: optional
 Build-Depends: debhelper (>= 9),
                dh-python (>= 2.20160609~),
+               python3-alabaster,
                python3-all,
                python3-click (>= 5.0),
-               python3-pytest,
-               python3-setuptools,
+               python3-configobj,
+               python3-dateutil,
                python3-freezegun,
                python3-icalendar,
-               python3-urwid,
-               python3-pyxdg,
-               python3-pytz,
-               vdirsyncer,
-               python3-dateutil,
-               python3-configobj,
-               python3-tzlocal,
+               python3-pytest,
+               python3-setuptools,
                python3-sphinx,
-               python3-alabaster
+               python3-tz,
+               python3-tzlocal,
+               python3-urwid,
+               python3-xdg,
+               vdirsyncer
 Standards-Version: 3.9.8
 Testsuite: autopkgtest-pkg-python
 Homepage: https://github.com/pimutils/khal

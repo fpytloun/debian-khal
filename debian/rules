@@ -10,11 +10,11 @@ export PYBUILD_NAME=khal
 override_dh_auto_build:
 	echo "version = '$(VER)'" > khal/version.py
 	dh_auto_build
-	PYTHONPATH=$(CURDIR) make -C docs man
+	PYTHONPATH=. sphinx-build -b man doc/source $(CURDIR)/doc/_build/man
 
 override_dh_sphinxdoc:
 ifeq (,$(findstring nodocs, $(DEB_BUILD_OPTIONS)))
-	PYTHONPATH=. sphinx-build -b html docs $(CURDIR)/debian/khal-doc/usr/share/doc/khal-doc/html
+	PYTHONPATH=. sphinx-build -b html doc/source $(CURDIR)/debian/khal-doc/usr/share/doc/khal-doc/html
 	dh_sphinxdoc -O--buildsystem=python_distutils
 endif
 

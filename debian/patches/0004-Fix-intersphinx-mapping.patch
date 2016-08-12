@@ -1,0 +1,19 @@
+From 6506ee6f8563cd45feeff6db17049a1608b5b50b Mon Sep 17 00:00:00 2001
+From: Filip Pytloun <filip@pytloun.cz>
+Date: Fri, 12 Aug 2016 20:38:33 +0200
+Subject: Fix intersphinx mapping
+
+---
+ doc/source/conf.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/doc/source/conf.py b/doc/source/conf.py
+index 0312bd7..ca54f31 100644
+--- a/doc/source/conf.py
++++ b/doc/source/conf.py
+@@ -276,4 +276,4 @@ texinfo_documents = [
+ 
+ 
+ # Example configuration for intersphinx: refer to the Python standard library.
+-intersphinx_mapping = {'http://docs.python.org/': None}
++intersphinx_mapping = {'python': ('/usr/share/doc/python3-doc/html', None)}

@@ -45,4 +45,3 @@ Table of Contents
    changelog
    faq
    license
-   news

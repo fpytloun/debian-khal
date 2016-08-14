@@ -1,14 +1,11 @@
 #!/usr/bin/make -f
 
-VER ?= $(shell dpkg-parsechangelog -SVersion)
-
 export PYBUILD_DESTDIR_python3=debian/khal
 export PYBUILD_NAME=khal
 %:
 	dh $@ --with python3,sphinxdoc --buildsystem=pybuild
 
 override_dh_auto_build:
-	echo "version = '$(VER)'" > khal/version.py
 	dh_auto_build
 	PYTHONPATH=. sphinx-build -b man doc/source $(CURDIR)/doc/_build/man
 
@@ -31,5 +28,4 @@ override_dh_auto_test:
 	LC_ALL=en_US.UTF-8 dh_auto_test
 
 override_dh_auto_clean:
-	rm -f khal/version.py
 	dh_auto_clean

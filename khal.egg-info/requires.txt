@@ -1,0 +1,12 @@
+click>=3.2
+icalendar
+urwid
+pyxdg
+pytz
+vdirsyncer
+python-dateutil
+configobj
+tzlocal>=1.0
+
+[proctitle]
+setproctitle

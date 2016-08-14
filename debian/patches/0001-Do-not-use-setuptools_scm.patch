@@ -1,4 +1,4 @@
-From 72f9493792dab0f9eb35c09c5a8a64bb27d144a0 Mon Sep 17 00:00:00 2001
+From 3c42b60fb55d67573a65401a91b65328bdf229c3 Mon Sep 17 00:00:00 2001
 From: Filip Pytloun <filip@pytloun.cz>
 Date: Fri, 12 Aug 2016 19:51:25 +0200
 Subject: Do not use setuptools_scm

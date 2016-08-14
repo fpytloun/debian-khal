@@ -1,0 +1,4 @@
+khal
+khal/khalendar
+khal/settings
+khal/ui

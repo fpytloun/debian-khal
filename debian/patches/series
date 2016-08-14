@@ -1,6 +1,5 @@
-0001-Do-not-use-setuptools_scm.patch
-0002-No-RSS-news-in-docs.patch
-0003-Reference-license-from-copyright-file.patch
-0004-Fix-intersphinx-mapping.patch
-0005-Fix-tests-failing-due-to-timezone.patch
-0006-Avoid-privacy-breach-in-sphinx-doc.patch
+0001-No-RSS-news-in-docs.patch
+0002-Reference-license-from-copyright-file.patch
+0003-Fix-intersphinx-mapping.patch
+0004-Fix-tests-failing-due-to-timezone.patch
+0005-Avoid-privacy-breach-in-sphinx-doc.patch

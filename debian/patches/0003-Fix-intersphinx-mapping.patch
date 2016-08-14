@@ -1,4 +1,4 @@
-From 099a31bcb193d7789f4a83c215b2164d14a725f3 Mon Sep 17 00:00:00 2001
+From a8a80fc0d42cfd7b4b6fd7cfaee4b3168bc2a99d Mon Sep 17 00:00:00 2001
 From: Filip Pytloun <filip@pytloun.cz>
 Date: Fri, 12 Aug 2016 20:38:33 +0200
 Subject: Fix intersphinx mapping

@@ -1,0 +1,5 @@
+Test-Command: set -e ; for py in $(py3versions -r 2>/dev/null) ; do cd "$ADTTMP" ; echo "Testing with $py:" ; $py -c "import khal; print(khal)" ; done
+Depends: python3-all, khal
+
+Test-Command: khal --help
+Depends: khal

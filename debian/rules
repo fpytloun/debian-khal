@@ -26,3 +26,11 @@ override_dh_auto_test:
 	export LOCPATH=$(CURDIR)/debian/tmp/locale/ && \
 	export LC_ALL=en_US.UTF-8 && \
 	LC_ALL=en_US.UTF-8 dh_auto_test
+
+override_dh_installchangelogs:
+	rm -f debian/upstream-changelog
+	set -e ; for i in $$(find doc/source/news -name "khal*.rst" | sort -V -r); do \
+		cat $$i ; \
+		echo "" ; \
+	done >> debian/upstream-changelog
+	dh_installchangelogs debian/upstream-changelog

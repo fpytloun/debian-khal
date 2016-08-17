@@ -1,4 +1,4 @@
-From a8a80fc0d42cfd7b4b6fd7cfaee4b3168bc2a99d Mon Sep 17 00:00:00 2001
+From 254f0ed32355c9bf6d0db87cbfae0984c383aef5 Mon Sep 17 00:00:00 2001
 From: Filip Pytloun <filip@pytloun.cz>
 Date: Fri, 12 Aug 2016 20:38:33 +0200
 Subject: Fix intersphinx mapping
@@ -8,7 +8,7 @@ Subject: Fix intersphinx mapping
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/doc/source/conf.py b/doc/source/conf.py
-index 0312bd7..ca54f31 100644
+index 35a5779..54b4002 100644
 --- a/doc/source/conf.py
 +++ b/doc/source/conf.py
 @@ -276,4 +276,4 @@ texinfo_documents = [

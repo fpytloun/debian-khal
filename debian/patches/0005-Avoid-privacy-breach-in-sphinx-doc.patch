@@ -1,4 +1,4 @@
-From bb130b1e8a3a272b29979c22f1ec941091521913 Mon Sep 17 00:00:00 2001
+From 4e4a0a066ac93f2a2dbc95f1bccbccf99061303a Mon Sep 17 00:00:00 2001
 From: Filip Pytloun <filip@pytloun.cz>
 Date: Fri, 12 Aug 2016 21:18:33 +0200
 Subject: Avoid privacy breach in sphinx doc
@@ -9,7 +9,7 @@ Subject: Avoid privacy breach in sphinx doc
  2 files changed, 5 insertions(+), 7 deletions(-)
 
 diff --git a/doc/source/conf.py b/doc/source/conf.py
-index ca54f31..08f78e1 100644
+index 54b4002..82062ca 100644
 --- a/doc/source/conf.py
 +++ b/doc/source/conf.py
 @@ -108,11 +108,11 @@ html_theme = 'alabaster'

@@ -9,6 +9,11 @@ override_dh_auto_build:
 	dh_auto_build
 	PYTHONPATH=. sphinx-build -b man doc/source $(CURDIR)/doc/_build/man
 
+override_dh_auto_install:
+	dh_auto_install
+	mkdir -p debian/khal/usr/share/zsh/vendor-completions
+	cp misc/__khal debian/khal/usr/share/zsh/vendor-completions/_khal
+
 override_dh_sphinxdoc:
 ifeq (,$(findstring nodocs, $(DEB_BUILD_OPTIONS)))
 	PYTHONPATH=. sphinx-build -b html doc/source $(CURDIR)/debian/khal-doc/usr/share/doc/khal-doc/html
